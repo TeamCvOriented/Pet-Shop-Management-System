@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="IPetDao">
+	<resultMap id="PetResultMap" type="com.entity.Pet">
+		<id property="pId" column="pId"/>
+        <result column="pName" property="pName"/>
+        <result column="pPrice" property="pPrice"/>
+        <result column="pBreed" property="pBreed"/>
+         <result column="pAge" property="pAge"/>
+          <result column="pSex" property="pSex"/>
+          <result column="pState" property="pState"/>
+          <result column="pIntroduce" property="pIntroduce"/>
+          <result column="uId" property="uId"/>
+          <result column="pImage" property="pImage"/>
+    </resultMap>
+
+	
+	
+	
+	<select id="findAllPet" resultType="com.entity.Pet" resultMap="PetResultMap">
+        select * from Pet
+    </select>
+    <select id="findPetByuId" resultType="com.entity.Pet" resultMap="PetResultMap">
+        select * from Pet where uId = #{uId}
+    </select>
+	
+	<select id="findBypBreed" parameterType="java.lang.String" resultType="com.entity.Pet">
+    select * from Pet where pBreed LIKE CONCAT('%', #{pBreed}, '%') AND uId = 0
+</select>
+
+    
+    <update id="update" parameterType="com.entity.Pet">
+        UPDATE Pet SET pName=#{pName},pPrice=#{pPrice},pBreed=#{pBreed},pAge=#{pAge},pSex=#{pSex},pState=#{pState},pIntroduce=#{pIntroduce},pImage=#{pImage}  WHERE pId = #{pId}
+    </update>
+    
+    <update id="updatestate" >
+        UPDATE Pet SET uId=#{uId},pState=#{newState} WHERE pId = #{pId}
+    </update>
+    
+	<insert id="add" parameterType="com.entity.Pet">
+    insert into Pet(pName, pPrice, pBreed, pAge, pSex, pState, pIntroduce, uId, pImage)
+    values (#{pName}, #{pPrice}, #{pBreed}, #{pAge}, #{pSex}, #{pState}, #{pIntroduce}, #{uId}, #{pImage})
+</insert>
+    <select id="findBypId" parameterType="int" resultType="com.entity.Pet" >
+        select * from Pet where pId = #{pId}
+    </select>
+</mapper>

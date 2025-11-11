@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#header{
+	height:80px;
+	width:100%;
+	background-color:#f7f9fa;
+	position:relative;
+	background-image: url(../img/head.png);
+	background-size: 100% 100%;
+}
+#header .search{
+	position:absolute;
+	right:90px;
+	bottom:20px;
+}
+#header .search .searchButton{
+	border-radius: 10px;
+}
+#header .title{
+	width:100%;
+	width:30%;
+	position:absolute;
+	left:8%;
+	top:20%;
+}
+#header .back{
+	position:absolute;
+	width:80px;
+	height:40px;
+	left:20px;
+	top:20px;
+}
+#header .back img{
+	width:80px;
+	height:40px;
+}
+.main .Box{
+	height: 250px;
+	width: 200x;
+	background-color: #f7f9fa;
+	float: left;
+	border-radius: 10px;
+	margin-left: 25px;
+	margin-top:25px;
+}
+.main .Box .imgBox{
+	height: 200px;
+	width:200px;
+	
+	border-radius: 10px;
+}.main .Box .smallBox{
+	height: 50px;
+	width: 200x;
+	border-radius: 10px;
+	position:relative;
+}
+.main .Box img{
+	height: 180px;
+	width:180px;
+	border-radius: 10px;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.main .smallBox p{
+	diaplay:block;
+	font-size: 16px;
+	line-height:16px;
+	margin-left: 10px;
+	text-align: left;
+	margin-top:0px;
+}
+.main .smallBox i{
+	color:red;
+}
+.main .smallBox .button{
+	position:absolute;
+	right:0px;
+	bottom:10px;
+}
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="IGuideDao">
+	<resultMap id="GuideResultMap" type="com.entity.Guide">
+        <result column="gId" property="gId"/>
+        <result column="gContent" property="gContent"/>
+        <result column="gTitle" property="gTitle"/>
+        <result column="gImage" property="gImage"/>
+    </resultMap>
+
+    <select id="findAllGuide" resultType="com.entity.Guide" resultMap ="GuideResultMap">
+        select * from Guide
+    </select>
+	<select id="findGuidebygId" resultType="com.entity.Guide" resultMap ="GuideResultMap">
+        select * from Guide where gId=#{gId} 
+    </select>
+	<insert id="addGuide" parameterType="com.entity.Guide" >
+		insert into Guide(gContent,gTitle,gImage) values(#{gContent},#{gTitle},#{gImage})
+	</insert>
+	
+    <delete id="deleteGuide" parameterType="java.lang.Integer">
+      delete from Guide where gId=#{gId}
+    </delete>
+</mapper>

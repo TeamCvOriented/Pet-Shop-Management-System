@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#i9pe{
+  background-repeat: repeat;
+  background-position: left top;
+  background-attachment: scroll;
+  background-size: auto;
+}
+#iw6h{
+  color: #ffffff;
+  font-size: 40px;
+}
+#i2mks, #ir31x{
+  width: 300px; /* 修改按钮宽度 */
+  height: 200px; /* 修改按钮高度 */
+  border-radius: 10%;
+  border: 0px solid #f9f9f9;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 楷体;
+}
+#i2mks{
+  background-color: #a88462;
+}
+#ir31x{
+  background-color: #845a33;
+}
+.fdb-block{
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  padding-top: 250px; /* 增加这个值来将按钮向下平移 */
+  padding-right: 0px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  color: rgb(68, 68, 68);
+  position: absolute;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/choice.jpg');
+}
+.text-center{
+  text-align: center;
+}
+.fdb-block .text-h1, .fdb-block h1{
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+  font-weight: 400;
+}
+.fdb-block .text-h2, .fdb-block h2{
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+  font-weight: 400;
+}
+.fdb-block .text-h3, .fdb-block h3{
+  font-size: 0.875rem;
+  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+  font-weight: 400;
+}
+.pt-3{
+  padding-top: 1rem !important;
+}
+.col-12.col-sm-10.m-auto.m-md-0.col-md-6{
+  width: 20%;
+  height: 20%;
+}
+.row.text-center.pt-3.pt-xl-5{
+  position: static;
+}
+.col-12{
+  height: 20%;
+  position: static;
+}
+.c25357{
+  padding: 10px;
+}
+@media (min-width: 1200px){
+  .pt-xl-5{
+    padding-top: 3rem !important;
+  }
+}

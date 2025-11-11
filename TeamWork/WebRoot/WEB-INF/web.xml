@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterController</servlet-name>
+    <servlet-class>com.controller.RegisterController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateController</servlet-name>
+    <servlet-class>com.controller.UpdateController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GuideController</servlet-name>
+    <servlet-class>com.controller.GuideController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PetManagerController</servlet-name>
+    <servlet-class>com.controller.PetManagerController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ItemManagerController</servlet-name>
+    <servlet-class>com.controller.ItemManagerController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GuideManagerController</servlet-name>
+    <servlet-class>com.controller.GuideManagerController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderController</servlet-name>
+    <servlet-class>com.controller.OrderController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopPetController</servlet-name>
+    <servlet-class>com.controller.ShopPetController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopItemController</servlet-name>
+    <servlet-class>com.controller.ShopItemController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sReservationController</servlet-name>
+    <servlet-class>com.controller.sReservationController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sOrderController</servlet-name>
+    <servlet-class>com.controller.sOrderController</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopServiceController</servlet-name>
+    <servlet-class>com.controller.ShopServiceController</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterController</servlet-name>
+    <url-pattern>/RegisterController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateController</servlet-name>
+    <url-pattern>/UpdateController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GuideController</servlet-name>
+    <url-pattern>/GuideController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PetManagerController</servlet-name>
+    <url-pattern>/PetManagerController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ItemManagerController</servlet-name>
+    <url-pattern>/ItemManagerController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GuideManagerController</servlet-name>
+    <url-pattern>/GuideManagerController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderController</servlet-name>
+    <url-pattern>/OrderController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopPetController</servlet-name>
+    <url-pattern>/ShopPetController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopItemController</servlet-name>
+    <url-pattern>/ShopItemController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sReservationController</servlet-name>
+    <url-pattern>/sReservationController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sOrderController</servlet-name>
+    <url-pattern>/sOrderController</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>ShopServiceController</servlet-name>
+    <url-pattern>/ShopServiceController</url-pattern>
+  </servlet-mapping>
+</web-app>

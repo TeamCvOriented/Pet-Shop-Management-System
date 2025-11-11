@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#i9pe{
+  background-repeat:repeat;
+  background-position:left top;
+  background-attachment:scroll;
+  background-size:auto;
+}
+.c2742{
+  display:none;
+}
+.c2758{
+  height:100vh;
+  padding-top:60px;
+}
+.c2733{
+
+}
+.main-content.c2758{
+  background-image:url('../img/sRegister.jpg');
+  background-repeat:repeat-x;
+  background-position:center center;
+  background-attachment:scroll;
+  background-size:cover;
+  box-shadow:0 0 5px 0 black ;
+  color:#fafafa;
+}
+.mb-7{
+  color:#fef8f8;
+}
+.bg-white.rounded.shadow-7.w-400.mw-100.p-6.mx-auto{
+  color:#000000;
+  background-color:#758a99;
+}
+.rounded.shadow-7.w-400.mw-100.p-6.mx-auto{
+  color:#fafafa;
+}
+.text-center.text-muted.small-2{
+  color:#fafafa;
+}
+.form-control.dwd{
+  width:50%;
+}
+#canvas {
+	margin-left:5%;
+	height:40px;
+    width:50%;
+    background-color:white;
+}

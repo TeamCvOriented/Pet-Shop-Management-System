@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="IOrderDao">
+	<resultMap id="OrderResultMap" type="com.entity.Order">
+	<id property="oId" column="oId"/>
+    <result column="oEvaluate" property="oEvaluate"/>
+    <result column="isPet" property="isPet"/>
+    <result column="Id" property="Id"/>
+    <result column="uId" property="uId"/>
+    <result column="oState" property="oState"/>
+    <result column="oTime" property="oTime"/>
+</resultMap>
+
+
+
+
+    <select id="findByuId" resultType="com.entity.Order" resultMap="OrderResultMap">
+        select * from `Order` WHERE uId = #{uId}
+    </select>
+	    <select id="findAllOrder" resultType="com.entity.Order" resultMap="OrderResultMap">
+        select * from `Order`
+    </select>
+	<update id="updateState">
+		UPDATE `Order` SET oState=#{oState} WHERE oId=#{oId}
+	</update>
+	
+    <update id="EvaluateOrder">
+        UPDATE `Order` SET oEvaluate=#{oEvaluate} WHERE oId = #{oId}
+    </update>
+    <insert id="add">
+		insert into `Order`(oEvaluate,isPet,Id,uId,oState,oTime) values (#{oEvaluate},#{isPet},#{Id},#{uId},#{oState},#{oTime})
+	</insert>
+</mapper>

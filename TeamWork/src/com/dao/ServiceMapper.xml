@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="IServiceDao">
+	<resultMap id="ServiceResultMap" type="com.entity.Service">
+        <result column="sId" property="sId"/>
+        <result column="sName" property="sName"/>
+        <result column="sPrice" property="sPrice"/>
+         <result column="uId" property="uId"/>
+          <result column="sState" property="sState"/>
+          <result column="sIntroduce" property="sIntroduce"/>
+          <result column="pId" property="pId"/>
+          <result column="sTime" property="sTime"/>
+          <result column="sImage" property="sImage"/>
+    </resultMap>
+
+    <select id="findAllService" resultType="com.entity.Service" resultMap ="ServiceResultMap">
+        select * from Service
+    </select>
+	
+	<select id="findServiceBYsId" resultType="com.entity.Service" resultMap ="ServiceResultMap">
+        select * from Service WHERE sId = #{sId}
+    </select>
+    	<select id="findServiceBYuId" resultType="com.entity.Service" resultMap ="ServiceResultMap">
+        select * from Service WHERE uId = #{uId}
+    </select>
+    
+    <update id="updateState">
+        UPDATE Service SET sState=#{newState} WHERE sId = #{sId}
+    </update>
+	
+	<insert id="add">
+		insert into Service(sName,sPrice,uId,sState,sIntroduce,pId,sTime,sImage) values (#{sName},#{sPrice},#{uId},#{sState},#{sIntroduce},#{pId},#{sTime},#{sImage})
+	</insert>
+</mapper>
+
